@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { isEmpty } from 'rxjs';
 
 @Component({
   selector: 'app-root',
@@ -7,4 +8,19 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'data-binding';
+  username = '';
+  clickButton = false;
+
+  constructor(){
+  }
+
+  wipeUsername(){
+    this.username = '';
+  }
+
+  
+
+
 }
+
+
